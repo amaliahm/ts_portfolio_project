@@ -1,6 +1,7 @@
 import AboutMe from './sections/AboutMe'
 import Blog from './sections/Blog'
 import Hero from './sections/Hero'
+import ContactForm from './sections/Contact'
 import './index.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Blog />
+      <ContactForm />
     </>
   )
 }

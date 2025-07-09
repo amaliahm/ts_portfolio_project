@@ -1,7 +1,7 @@
 'use-client'
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import { motion, useMotionValue, useSpring, useTransform, useScroll, useAnimation } from "framer-motion"
-import { ArrowRight, Github, Linkedin, Code2, Sparkles, Mail, icons, HeartOff, Globe } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Code2, Sparkles, Mail, Globe } from "lucide-react"
 
 interface FloatingIconProps {
     icon: React.ReactNode,
@@ -44,8 +44,6 @@ export default function Hero() {
     const nameOpacity = useTransform(scrollY, [0, 100], [1, 0])
     const nameScale = useTransform(scrollY, [0, 100], [1, 0.8])
     const nameTranslateY = useTransform(scrollY, [0, 100], [0, -50])
-    const light1X = useTransform(x, [0, 1000], [-100, 100])
-    const light1Y = useTransform(y, [0, 1000], [-100, 100])
     const light2X = useTransform(x, [0, 1000], [100, -100])
     const light2Y = useTransform(y, [0, 1000], [100, -100])
 
