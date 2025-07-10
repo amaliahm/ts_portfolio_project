@@ -8,6 +8,7 @@ const Hero = dynamic(() => import ('./sections/Hero'))
 const AboutMe = dynamic(() => import('./sections/AboutMe'))
 const Blog = dynamic(() => import('./sections/Blog'))
 const ContactForm = dynamic(() => import('./sections/Contact'))
+const Projects = dynamic(() => import('./sections/Projects'))
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <Hero />
         <AboutMe />
         {/* skills */}
-        {/* projects */}
+        <Projects />
         <Blog />
         <ContactForm />
         {/* footer */}
