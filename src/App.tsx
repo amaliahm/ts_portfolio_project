@@ -9,6 +9,7 @@ const AboutMe = dynamic(() => import('./sections/AboutMe'))
 const Blog = dynamic(() => import('./sections/Blog'))
 const ContactForm = dynamic(() => import('./sections/Contact'))
 const Projects = dynamic(() => import('./sections/Projects'))
+const Skills = dynamic(() => import('./sections/Skills'))
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       <Suspense fallback={<LoadingScreen />}>
         <Hero />
         <AboutMe />
-        {/* skills */}
+        <Skills />
         <Projects />
         <Blog />
         <ContactForm />
