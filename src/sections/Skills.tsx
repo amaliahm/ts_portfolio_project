@@ -53,10 +53,10 @@ const skillCategories: SkillCategory[] = [
     description: "Optimizing workflows and deployment pipelines for full-stack applications.",
     skills: [
       { name: "Git & GitHub", level: "Expert", icon: Wrench },
-      { name: "Docker", level: "Intermediate", icon: CloudCog },
+      { name: "Docker", level: "Expert", icon: CloudCog },
       { name: "CI/CD (GitHub Actions)", level: "Avance", icon: Wrench },
       { name: "Linux CLI", level: "Avance", icon: Terminal },
-      { name: "Nginx/Reverse Proxy", level: "Intermediate", icon: CloudCog },
+      { name: "Nginx/Reverse Proxy", level: "Expert", icon: CloudCog },
       { name: "Cloud Hosting (Vercel / Render)", level: "Avance", icon: CloudCog }
     ]
   },
@@ -68,7 +68,7 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "MVC Pattern", level: "Expert", icon: Braces },
       { name: "Clean Code", level: "Avance", icon: Wrench },
-      { name: "Modular Monolith", level: "Intermediate", icon: Braces },
+      { name: "Modular Monolith", level: "Expert", icon: Braces },
       { name: "Folder Structures", level: "Expert", icon: Wrench },
       { name: "API Versioning", level: "Avance", icon: Terminal },
       { name: "Error Handling", level: "Expert", icon: Wrench }
@@ -135,7 +135,7 @@ interface CategorySectionProps {
 const CategorySection: React.FC<CategorySectionProps> = ({ category, index }) => (
     <motion.div
       initial={{ opacity: 1, y: 20 }}
-      whileInHover={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index*0.2}}
       className='relative'
     >

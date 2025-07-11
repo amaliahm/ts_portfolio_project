@@ -10,6 +10,7 @@ const Blog = dynamic(() => import('./sections/Blog'))
 const ContactForm = dynamic(() => import('./sections/Contact'))
 const Projects = dynamic(() => import('./sections/Projects'))
 const Skills = dynamic(() => import('./sections/Skills'))
+const Footer = dynamic(() => import('./Layouts/Footer'))
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         <Projects />
         <Blog />
         <ContactForm />
-        {/* footer */}
+        <Footer />
       </Suspense>
     </main>
   )
